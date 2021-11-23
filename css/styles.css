@@ -65,3 +65,31 @@ img {
 #web_dev li {
     text-align: left;
 }
+
+#sarasas_uzduotis {
+    display: table;
+    margin:auto;
+    background-color: lightgray;
+    box-shadow: 4px 4px 8px black;
+}
+
+#sarasas_uzduotis li {
+    color:blue;
+ }
+
+#sarasas_uzduotis li:nth-child(2) ul  {
+    width: 100px;
+    height: 100px;
+}
+
+#sarasas_uzduotis li:nth-child(3) li:nth-child(3){
+    color:red;
+}
+
+#sarasas_uzduotis li:nth-child(1) li:nth-child(2){
+    color:red;
+}
+
+#sarasas_uzduotis  li li:nth-child(even) {
+    font-weight: bold;
+}
