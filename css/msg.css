@@ -1,0 +1,13 @@
+body {
+    background-image: url(../image/background.png);
+    background-size: cover;
+}
+
+form {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+}
+form label {
+    color:white;
+}
