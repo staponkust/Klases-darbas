@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Forma 4</title>
+        <link rel="stylesheet" type="text/css" href="../css/msg.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     </head>
     <body>
-        <div id="web_msg">
-            <input type="text" id="name">
+        <form action="../index.html" target="_self" method="post">
+            <input type="text" id="name" required="required">
             <label for="name">Jusu vardas</label></br></br>
-            <input type="email" id="el_pastas">
+            <input type="email" id="el_pastas" required="required">
             <label for="el_pastas">Jusu el. pasto adresas</label></br></br>
-            <input type="text" id="msg_topic">
+            <input type="text" id="msg_topic" required="required">
             <label for="msg_topic">Zinutes tema</label></br></br>
-            <textarea rows="6" cols="20" id="msg_area"></textarea>
+            <textarea rows="6" cols="20" id="msg_area" required="required"></textarea>
             <label for="msg_area">Jusu zinute</label></br></br>
             <input type="submit" value="Siusti zinute">
-        </div>
+        </form>
     </body>
 </html>
