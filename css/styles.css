@@ -29,8 +29,26 @@ td {
 }
 
 img {
-    border-radius: 200px;
+    border-radius: 100px;
     box-shadow: 4px 4px 8px black;
+}
+
+img:first-child {
+    width: 500px;
+    height: 500px;
+}
+
+img:nth-child(2) {
+    width: 300px;
+    height: 300px;
+}
+img:nth-child(3) {
+    width: 300px;
+    height: 300px;
+}
+img:nth-child(4) {
+    width: 300px;
+    height: 300px;
 }
 
 #products {
