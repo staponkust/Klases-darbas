@@ -3,9 +3,12 @@ body {
     background-size: cover;
 }
 
-#login {
+form {
     position: absolute;
     top: 45%;
     left: 45%;
-    text-align: center;
+}
+
+form label {
+    color: white;
 }
