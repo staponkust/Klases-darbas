@@ -1,18 +1,17 @@
 body {
-    background-color:lightyellow;
     font-family: sans-serif;
     text-align: center;
 }
 
-h1 {
+/*h1 {
     background-color: blanchedalmond;
     box-shadow: 4px 4px 8px black;
-}
+} */
 
-h2 {
+/* h2 {
     background-color: rgb(172, 172, 156);
     box-shadow: 4px 4px 8px black;
-}
+}*/
 table {
     border: 1px solid black;
     box-shadow: 3px 3px 8px black;
@@ -110,4 +109,19 @@ img:nth-child(4) {
 
 #sarasas_uzduotis  li li:nth-child(even) {
     font-weight: bold;
+}
+header {
+    background-color: indianred;
+}
+
+aside {
+    background-color: aqua;
+}
+
+main {
+    background-color: yellow;
+}
+footer {
+    background-color: black;
+    color:lightgray;
 }
