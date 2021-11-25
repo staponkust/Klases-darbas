@@ -1,0 +1,20 @@
+div {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    display: inline-block;
+}
+div:nth-of-type(odd){
+    background-color: grey;
+}
+.zydra {
+    background-color: cyan;
+}
+.zalia {
+    background-color: chartreuse;
+}
+.purpurine {
+    background-color: lightpink;
+}
