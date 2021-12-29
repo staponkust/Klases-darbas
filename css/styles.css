@@ -1,127 +1,406 @@
-body {
-    font-family: sans-serif;
+html {
+    height: 100%;
+}
+.gridas {
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+        'h h h'
+        's m r'
+        's m r'
+        'f f f';
+    grid-template-rows: 120px auto auto 60px;
+    grid-template-columns: 1fr 3fr 1fr;
+    background-color: #02212a;
+    color:white;
+}
+.nav_grid {
+    grid-area: h;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_grid h1 {
+    margin: auto;
+    font-family: Forte, serif;
+    font-size: 60px;
+}
+.nav_grid ul {
+    list-style: none;
+}
+.nav_grid li {
+    display: inline-block;
+    margin: 10px 10px;
+}
+.nav_grid a {
+    background-color: white;
+    text-decoration: none;
+    font-size: larger;
+    border: 1em solid white;
+    border-radius: 30px 4px;
+    color:#02212a;
+}
+.nav_grid a:hover {
+    background-color: #02212a;
+    text-decoration: none;
+    font-size: larger;
+    border: 1em solid #02212a;
+    border-radius: 30px 4px;
+    color: white;
+}
+.rside_grid {
+    grid-area: r;
     text-align: center;
 }
-
-/*h1 {
-    background-color: blanchedalmond;
-    box-shadow: 4px 4px 8px black;
-} */
-
-/* h2 {
-    background-color: rgb(172, 172, 156);
-    box-shadow: 4px 4px 8px black;
-}*/
-table {
-    border: 1px solid black;
-    box-shadow: 3px 3px 8px black;
-    margin-left:auto;
-    margin-right:auto;
+.main_grid1 {
+    grid-area: m;
 }
-
-th {
-    border: 1px solid black;
+.main_grid1 h3 a{
+    text-decoration: none;
+    color:white;
+    text-align: center;
 }
-
-td {
-    border: 1px solid black;
+.main_grid1 p mark {
+    background-color: white;
 }
-
-img {
-    border-radius: 100px;
-    box-shadow: 4px 4px 8px black;
+.main_grid1 table {
+    border:1px solid white;
+    margin: auto auto;
+    background-color: #02212a;
+    color: white;
+    box-shadow: 4px 4px 4px white;
+    padding: 30px;
 }
-
-img:first-child {
-    width: 500px;
-    height: 500px;
+.main_grid1 .links_to_tut {
+    padding: 30px;
 }
-
-img:nth-child(2) {
-    width: 300px;
-    height: 300px;
+.main_grid1 .links_to_tut li {
+    text-decoration: none;
+    display: inline;
+    background-color: white;
+    margin: 5px 5px;
+    width: 100%;
 }
-img:nth-child(3) {
-    width: 300px;
-    height: 300px;
+.main_grid1 .links_to_tut li a {
+    background-color: white;
+    text-decoration: none;
+    font-size: larger;
+    border: 1em solid white;
+    border-radius: 20px 20px;
+    color: #02212a;
+    border-spacing: 10px;
+    width: 100%;
 }
-img:nth-child(4) {
-    width: 300px;
-    height: 300px;
+.main_grid1 .links_to_tut li a:hover {
+    background-color: #02212a;
+    text-decoration: none;
+    font-size: larger;
+    border: 1em solid #02212a;
+    border-radius: 20px 20px;
+    color: white;
 }
-
-#products {
+#robot1 {
+    grid-area: r1;
+    height:auto;
+    width:80%;
+}
+#robot2 {
+    grid-area: r2;
+    height:auto;
+    width:80%;
+}
+#robot3 {
+    grid-area: r3;
+    height: auto;
+    width: 80%;
+}
+#robot4 {
+    grid-area: r4;
+    height: auto;
+    width: 80%;
+}
+#robot5 {
+    grid-area: r5;
+    height: auto;
+    width: 80%;
+}
+.robots {
+    display: grid;
+    grid-template-areas:
+            'r2 r4 r3 r1 r5';
+    justify-content: space-around;
+    align-items: center;
+}
+#products{
+    font-size: 20px;
     display: table;
     margin:auto;
-    background-color: lightgray;
-    box-shadow: 4px 4px 8px black;
 }
-
 #products li {
     text-align: left;
 }
-
 #films {
+    font-size: 20px;
     display: table;
     margin:auto;
-    background-color: lightgray;
-    box-shadow: 4px 4px 8px black;
 }
-
 #films li {
     text-align: left;
 }
-
 #web_dev {
+    font-size: 20px;
     display: table;
     margin:auto;
-    background-color: lightgray;
-    box-shadow: 4px 4px 8px black;
 }
-
 #web_dev li {
     text-align: left;
 }
-
 #sarasas_uzduotis {
+    font-size: 20px;
     display: table;
     margin:auto;
-    background-color: lightgray;
-    box-shadow: 4px 4px 8px black;
 }
-
 #sarasas_uzduotis li {
-    color:blue;
- }
-
+    text-align: left;
+}
 #sarasas_uzduotis li:nth-child(2) ul  {
     width: 100px;
     height: 100px;
 }
-
 #sarasas_uzduotis li:nth-child(3) li:nth-child(3){
     color:red;
 }
-
 #sarasas_uzduotis li:nth-child(1) li:nth-child(2){
     color:red;
 }
-
 #sarasas_uzduotis  li li:nth-child(even) {
     font-weight: bold;
 }
-header {
-    background-color: indianred;
-}
-
-aside {
-    background-color: aqua;
-}
-
-main {
-    background-color: yellow;
+.question {
+    text-align: center;
+    grid-area: m;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 footer {
-    background-color: black;
-    color:lightgray;
+    grid-area: f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+/* Extra maži įrenginiai (telefonai, 600px ir žemiau) */
+@media only screen and (max-width: 600px) {
+    html {
+        height: 100%;
+    }
+    .gridas {
+        height: 100%;
+        display: grid;
+        grid-template-areas:
+        'h'
+        'm'
+        'm'
+        'f';
+        grid-template-rows: 300px auto auto 50px;
+        grid-template-columns: 100%;
+        background-color: #02212a;
+        color:white;
+    }
+    .nav_grid {
+        grid-area: h;
+        display: block;
+    }
+    .nav_grid h1 {
+        margin: auto;
+        font-family: Forte, serif;
+        font-size: 60px;
+        text-align: center;
+    }
+    .nav_grid ul {
+        list-style: none;
+        margin:0;
+        padding:0;
+    }
+    .nav_grid li {
+        display: inline-block;
+        text-align: center;
+        padding: 10px 10px 10px 10px;
+        margin:0;
+        width: 100%;
+    }
+    .nav_grid a {
+        text-decoration: none;
+        font-size: 20px;
+        color: #ffffff;
+        border-radius:0;
+        border:0;
+        background-color: #02212a;
+    }
+    .nav_grid a:hover {
+        background-color: white;
+        text-decoration: none;
+        border-radius:0;
+        border:20px solid white;
+        font-size: 20px;
+        color: #02212a;
+    }
+    .rside_grid {
+        display: none;
+    }
+    .main_grid1 {
+        grid-area: m;
+        text-align: center;
+    }
+    .main_grid1 h3 a{
+        text-decoration: none;
+        color:white;
+        text-align: center;
+    }
+    .main_grid1 p mark {
+        background-color: white;
+    }
+    .main_grid1 table {
+        border:1px solid white;
+        margin: auto auto;
+        background-color: #02212a;
+        color: white;
+        box-shadow: 4px 4px 4px white;
+        padding: 30px;
+    }
+    .main_grid1 .links_to_tut {
+        padding: 30px;
+    }
+    .main_grid1 .links_to_tut li {
+        text-decoration: none;
+        display: block;
+        background-color: white;
+        margin: 5px 5px;
+        width: 100%;
+    }
+    .main_grid1 .links_to_tut li a {
+        background-color: white;
+        text-decoration: none;
+        font-size: larger;
+        border:0;
+        border-radius:0;
+        color: #02212a;
+        border-spacing: 10px;
+        width: 100%;
+    }
+    .main_grid1 .links_to_tut li a:hover {
+        background-color: #02212a;
+        text-decoration: none;
+        font-size: larger;
+        border: 1em solid #02212a;
+        border-radius:0;
+        color: white;
+    }
+    #robot1 {
+        grid-area: r1;
+        height:auto;
+        width:60%;
+        align-items: center;
+    }
+    #robot2 {
+        grid-area: r2;
+        height:auto;
+        width:80%;
+        object-fit: contain;
+    }
+    #robot3 {
+        grid-area: r3;
+        height: auto;
+        width: 80%;
+        object-fit: contain;
+    }
+    #robot4 {
+        grid-area: r4;
+        height: auto;
+        width: 80%;
+    }
+    #robot5 {
+        grid-area: r5;
+        height: auto;
+        width: 80%;
+    }
+    .robots {
+        display: grid;
+        grid-template-areas:
+            'r2 r4 r3 r1 r5';
+        align-items: center;
+        justify-items: center;
+    }
+    #products{
+        font-size: 20px;
+        display: table;
+        margin:auto;
+    }
+    #products li {
+        text-align: left;
+    }
+    #films {
+        font-size: 20px;
+        display: table;
+        margin:auto;
+    }
+    #films li {
+        text-align: left;
+    }
+    #web_dev {
+        font-size: 20px;
+        display: table;
+        margin:auto;
+    }
+    #web_dev li {
+        text-align: left;
+    }
+    #sarasas_uzduotis {
+        font-size: 20px;
+        display: table;
+        margin:auto;
+    }
+    #sarasas_uzduotis li {
+        text-align: left;
+    }
+    #sarasas_uzduotis li:nth-child(2) ul  {
+        width: 100px;
+        height: 100px;
+    }
+    #sarasas_uzduotis li:nth-child(3) li:nth-child(3){
+        color:red;
+    }
+    #sarasas_uzduotis li:nth-child(1) li:nth-child(2){
+        color:red;
+    }
+    #sarasas_uzduotis  li li:nth-child(even) {
+        font-weight: bold;
+    }
+    .question {
+        text-align: center;
+        grid-area: m;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer {
+        grid-area: f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100%;
+    }
+}
+/* Maži įrenginiai (statmenos planšetės, ar gulsti telefonai 600px ir aukščiau) */
+@media only screen and (min-width: 600px) {
+}
+/* Vidutiniai įrenginiai (gulsčios planšetės ar maži laptopai, 768px ir aukščiau) */
+@media only screen and (min-width: 768px) {
+}
+/* Dideli įrenginiai (laptopai, staliniai PC, 992px ir aukščiau) */
+@media only screen and (min-width: 992px) {
+}
+/* Extra dideli įrenginiai (dideli laptopai ir stalinai PC, 1200px ir aukščiau) */
+@media only screen and (min-width: 1200px) {
 }
