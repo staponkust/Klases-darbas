@@ -1,0 +1,207 @@
+body {
+    background-color: grey;
+}
+.grid_talpykla {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    grid-template-areas:
+          'div1 div2 div3 div4 div5'
+          'div6 div7 div8 div9 div10'
+          'div11 div12 div13 div14 div15'
+          'div16 div17 div18 div19 div20'
+          'div21 div22 div23 div24 div25';
+    grid-gap:10px;
+
+}
+.item1{
+    grid-area: div1;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    border: 1px solid black;
+}
+.item2{
+    grid-area: div2;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    border: 1px solid black;
+    background-color: #3690a9;
+}
+.item3{
+    grid-area: div3;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    border: 1px solid black;
+}
+.item4{
+    grid-area: div4;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    border: 1px solid black;
+    background-color: #68c24f;
+}
+.item5{
+    grid-area: div5;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    border: 1px solid black;
+}
+.item6{
+    grid-area: div6;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    border: 1px solid black;
+    background-color: #3690a9;
+}
+.item7{
+    grid-area: div7;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    border: 1px solid black;
+}
+.item8{
+    grid-area: div8;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    border: 1px solid black;
+    background-color: #68c24f;
+}
+.item9{
+    grid-area: div9;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    border: 1px solid black;
+}
+.item10{
+    grid-area: div10;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    border: 1px solid black;
+    background-color: #3690a9;
+}
+.item11{
+    grid-area: div11;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    border: 1px solid black;
+}
+.item12{
+    grid-area: div12;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    border: 1px solid black;
+    background-color: #68c24f;
+}
+.item13{
+    grid-area: div13;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    border: 1px solid black;
+}
+.item14{
+    grid-area: div14;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    border: 1px solid black;
+    background-color: #3690a9;
+
+}
+.item15{
+    grid-area: div15;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    border: 1px solid black;
+}
+.item16{
+    grid-area: div16;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    border: 1px solid black;
+    background-color: #910aa9;
+}
+.item17{
+    grid-area: div17;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    border: 1px solid black;
+}
+.item18{
+    grid-area: div18;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    border: 1px solid black;
+    background-color: #910aa9;
+}
+.item19{
+    grid-area: div19;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    border: 1px solid black;
+}
+.item20{
+    grid-area: div20;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    border: 1px solid black;
+    background-color: #910aa9;
+}
+.item21{
+    grid-area: div21;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    border: 1px solid black;
+}
+.item22{
+    grid-area: div22;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    border: 1px solid black;
+    background-color: #910aa9;
+}
+.item23{
+    grid-area: div23;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    border: 1px solid black;
+}
+.item24{
+    grid-area: div24;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    border: 1px solid black;
+    background-color: #910aa9;
+}
+.item25{
+    grid-area: div25;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    border: 1px solid black;
+}
+.grid_talpykla div:nth-child(odd){
+    background-color: dimgrey;
+}
