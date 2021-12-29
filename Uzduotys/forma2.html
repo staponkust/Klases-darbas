@@ -2,10 +2,21 @@
 <html lang="en">
     <head>
         <title>Forma 2</title>
-        <link rel="stylesheet" type="text/css" href="../css/msg.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="../css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
+    <body class="gridas">
+    <header class="nav_grid">
+        <h1>Robot</h1>
+        <ul>
+            <li><a href="../index.html">Pradzia</a></li>
+            <li><a href="#">Nuotraukos</a></li>
+            <li><a href="#">Apie</a></li>
+            <li><a href="Uzduotys/forma2.html">Klausk</a></li>
+        </ul>
+    </header>
+    <main class="question">
         <form action="../index.html" target="_self" method="post">
             <input type="text" required="required" placeholder="Jusu vardas">
             </br></br>
@@ -17,5 +28,14 @@
             </br></br>
             <input type="submit" value="Siusti zinute">
         </form>
+    </main>
+    <aside class="rside_grid">
+        <form action="../index.html" target="_self" method="post">
+            <input type="text" placeholder="Vartotojo Vardas" required="required"></br></br>
+            <input type="password" placeholder="Slaptazodis" required="required"></br></br>
+            <input type="submit" value="Prisijungti">
+        </form>
+    </aside>
+        <footer>Visos teises saugomos &copy; 2021</footer>
     </body>
 </html>
