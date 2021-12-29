@@ -1,0 +1,18 @@
+body {
+    background-color: grey;
+}
+.skyriai {
+    background-color: #3690a9;
+}
+.skyriai  a {
+    padding:10px 10px;
+    text-decoration: none;
+}
+.aprasai {
+    display: flex;
+    visibility: hidden;
+    color:white;
+}
+.aprasai p {
+    padding: 12px 12px;
+}
