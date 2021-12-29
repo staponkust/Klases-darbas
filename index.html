@@ -1,24 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="/css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mano pirmas puslapis</title>
     </head>
-    <body>
-    <header>
-        <h1>1 Antraste</h1>
-            <a href="http://youtube.com">Youtube</a>
-            <a href="http://google.lt" target="_blank">Google</a>
-            <a href="">Nuoroda i niekur</a>
-            <a href="../Klases_darbas/second.html">Nuoroda i antra html faila</a>
-            <a href="../Klases_darbas/Folderis/index.html">Nuoroda i trecia index faila sukurtam aplanke</a>
+    <body class="gridas">
+    <header class="nav_grid">
+        <h1>Robot</h1>
+            <ul>
+                <li><a href="index.html">Pradzia</a></li>
+                <li><a href="#">Nuotraukos</a></li>
+                <li><a href="#">Apie</a></li>
+                <li><a href="Uzduotys/forma2.html">Klausk</a></li>
+            </ul>
     </header>
-
-    <aside>
+    <aside class="rside_grid">
+        <form action="Folderis/index.html" target="_self" method="post">
+            <input type="text" placeholder="Vartotojo Vardas" required="required"></br></br>
+            <input type="password" placeholder="Slaptazodis" required="required"></br></br>
+            <input type="submit" value="Prisijungti">
+        </form>
+    </aside>
+    <main class="main_grid1">
+        <h2>=== HTML 1 dalis ===</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Aut sint voluptates id quam distinctio.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sint voluptates <br> quam distinctio.</p>
         <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Aut sint voluptates id quam distinctio.</p>
+        <p id="ats"></p>
+        <p id="ats1"></p>
+        <p id="ats2"></p>
+        <p id="studentas"></p>
+        <p id="studentai"></p>
+        <p id="info_typeof"></p>
+        <p id="inst3"></p>
+        <p id="uuid"></p>
+        <img src="https://img.favpng.com/21/1/5/computer-icons-symbol-calculator-png-favpng-A5VbEjF7X4ZP3C88dW4LJdeiR.jpg" onclick="veikimas()" style="height:100px;width: 100px"><br>
+        <button onclick="sudeti_even()">Lyginiu skaiciu suma!</button></br></br>
+        <button onclick="sudeti_odd()">Nelyginiu skaiciu suma!</button></br></br>
+        <button onclick="sudeti_even_index()">Lyginiu indexu reikmsiu suma!</button></br></br>
+        <button onclick="index_irasymas()">Indekso suma i input teksto laukeli</button></br></br>
+        <button onclick="skaiciuGeneratorius()">Sugeneruok atsitiktinius skaicius!</button></br></br>
+        <button onclick="valytiGener()">Isvalyti sugeneruota seka!</button></br></br>
+        <button onclick="raidziu_generatorius()">Spauskit kad sugeneruoti raides!</button></br></br>
+        <button onclick="valyti_raidziu_generavima()">Trinti generuotas raides</button></br></br>
+        <button onclick="perduoti_imasyva()">Paiimtas tekstas is input teksto laukelio ir konvertuotas i number. Jis perduotas i A masyva ir sudeti_even() funkcija.</button></br></br>
+        <p id="rezultatas"></p>
+        <p id="rezultatas1"></p>
+        <p id="rezultatas2"></p>
+        <p id="tekstas_masyvas"></p>
+        <input type="text" id="input_text" value="">
+        <p id="atsitiktinis_skaiciu_masyvas"></p>
+        <p id="atsitiktines_raides"></p>
+        <p id="masyvo_funkcijos"></p>
+        <button id="knopke" onclick="window.alert(nuotraukos.length)">Window alert</button>
         <h2>2 Antraste</h2>
         <p>Lorem ipsum dolor <br>sit amet consectetur adipisicing elit.<br> Aut sint voluptates id quam distinctio.</p>
         <p><mark>Lorem <b>ipsum</b> dolor</mark> <i>sit</i> <em>amet</em> <small>consectetur</small> <del>adipisicing</del> <ins>elit</ins>. <sup>Aut sint</sup> <sub>voluptates</sub> id quam distinctio.</p><br>
@@ -47,27 +83,25 @@
                 <td>Miest2</td>
                 <td>Gatv2</td>
                 <td>4</td>
-            </tr>   
+            </tr>
         </table>
-
-    </aside>
-
-    <main>
-    <!--
-        <h3>
-            <a href="http://youtube.com">Youtube</a></br>
-            <a href="http://google.lt" target="_blank">Google</a></br>
-            <a href="">Nuoroda i niekur</a></br>
-            <a href="../Klases_darbas/second.html">Nuoroda i antra html faila</a></br>
-            <a href="../Klases_darbas/Folderis/index.html">Nuoroda i trecia index faila sukurtam aplanke</a>
-        </h3> -->
-        <h4>
-            <img id="robot1" src="./image/robotukas.png" alt="robotukas">
-            <img src="https://i.ytimg.com/vi/B4JY_JeodKw/maxresdefault.jpg" alt="antras robotukas"><br>
-            <img src="./image/robotukas2.jpg" width="200" alt="robotukas3"><br>
-            <a href="http://google.lt"><img src="https://static.turbosquid.com/Preview/2015/11/30__13_01_11/a1.jpga9c5304e-153b-4b89-ba30-92e4414cdd4eOriginal.jpg" width="300" alt=""></a><br>
-            <a href="https://pluralsight.imgix.net/course-images/sci-fi-robot-warrior-zbrush-1124-v1.jpg"><img src="https://pluralsight.imgix.net/course-images/sci-fi-robot-warrior-zbrush-1124-v1.jpg" width="400" alt=""></a><br>
+        <br>
+        <h3>=== HTML 2 dalis ===</h3>
+        <ul class="links_to_tut">
+            <li><a href="http://youtube.com">Youtube</a></li>
+            <li><a href="http://google.lt" target="_blank">Google</a></li>
+            <li><a href="">Nuoroda i niekur</a></li>
+            <li><a href="second.html">Nuoroda i antra html faila</a></li>
+            <li><a href="Folderis/index.html">Trecia index failas</a>
+        </ul>
+        <h4 class="robots">
+            <img id="robot1" src="image/robotukas.png" alt="robotukas">
+            <img id="robot2" src="https://i.ytimg.com/vi/B4JY_JeodKw/maxresdefault.jpg" alt="antras robotukas"><br>
+            <img id="robot3" src="image/robotukas2.jpg" width="200" alt="robotukas3"><br>
+            <a href="http://google.lt"><img id="robot4" src="https://static.turbosquid.com/Preview/2015/11/30__13_01_11/a1.jpga9c5304e-153b-4b89-ba30-92e4414cdd4eOriginal.jpg" width="300" alt="uzrasas"></a><br>
+            <a href="http://youtube.com"><img id="robot5" src="https://pluralsight.imgix.net/course-images/sci-fi-robot-warrior-zbrush-1124-v1.jpg" width="400" alt="uzrasas"></a><br>
         </h4>
+        <hr>
         <h6 id="products"> Pirkiniu sarasas
             <ul>
                 <li>batonas</li>
@@ -77,7 +111,9 @@
                 <li>pipirai</li>
                 <li>ausinukai</li>
             </ul>
-        </h6><br>
+        </h6>
+        <hr>
+        <div id="kasas"></div>
         <h6 id="films">5 megstamiausi filmu topai:
             <ol>
                 <li>pirmas filmas</li>
@@ -86,7 +122,8 @@
                 <li>ketvirtas filmas</li>
                 <li>penktas filmas</li>
             </ol>
-        </h6><br>
+        </h6>
+        <hr>
         <h6 id="web_dev">Tinklapiu kurimas
             <ul>
                 <li>Frontend
@@ -120,7 +157,8 @@
                     </ul>
                 </li>
             </ul>
-        </h6><br>
+        </h6>
+        <hr>
         <ul id="sarasas_uzduotis">
             <li>
                 <ul>
@@ -145,7 +183,18 @@
             </li>
         </ul>
     </main>
-    <br>
     <footer>Visos teises saugomos &copy; 2021</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/Jquery/jquery_4dalis_1uzd.js"></script>
+    <script src="/js/uzduotis1.js"></script>
+    <script src="/js/uzduotis2.js"></script>
+    <script src="/js/uzduotis3.js"></script>
+    <script src="/js/daugiakampiu_suma.js"></script>
+    <script src="/js/intervalu_skaiciavimas.js"></script>
+    <script src="/js/studentas_task_0-3.js"></script>
+    <script src="/js/studentas_task_4_14.js"></script>
+    <script src="/js/paveiksleliu_isvedimas.js"></script>
+    <script src="/js/funkcijos.js"></script>
+    <script src="/js/js_antra_dalis_15.js"></script>
     </body>
 </html>
